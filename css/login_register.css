@@ -1,0 +1,396 @@
+/*Login.php*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/chimken\ and\ oink.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.7; 
+    z-index: -1; 
+}
+
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: darkgreen;
+}
+
+.login-container,
+.additional-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 10px 0; /* Added margin to separate the containers */
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form .form-group label {
+    display: block;
+    margin-bottom: px;
+    color: green;
+}
+
+.login-form .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+    color: green;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #72C268;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+p {
+    text-align: center;
+    color: green;
+}
+
+.register-link {
+    color: green;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Register.php */
+.registration-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 10px 0; 
+}
+
+.registration-header {
+    text-align: center;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-column {
+    flex: 0 0 48%;
+}
+
+.fade-input {
+    color: #ccc;
+}
+
+.registration-form .form-group {
+    margin-bottom: 10px;
+}
+
+.registration-form .form-group label {
+    display: block;
+    margin-bottom: 10px; 
+    color: green;
+}
+
+.registration-form .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.registration-form .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px; 
+}
+
+.user-type-options {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.user-type-options label {
+    display: flex;
+    align-items: center;
+    margin-right: 100px; 
+}
+
+.user-type-options input[type="radio"] {
+    margin-right: 50px;
+}
+
+button {
+    width: 100%; 
+    padding: 10px;
+    background-color: #72C268;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; 
+    margin: auto; 
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+p {
+    text-align: center;
+    color: green;
+}
+
+.login-link {
+    color: green;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* OTP Verification for Phone Number.php & OTP Verification for Email.php */
+.verification-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+}
+
+.verification-header {
+    color: green;
+    margin-bottom: 20px;
+}
+
+.verification-form p {
+    color: green;
+    margin-bottom: 20px;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+.otp-input {
+    width: 30px;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 10px; 
+}
+
+
+/* Verify_email.php*/
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: green;
+    text-align: left; 
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.resend-link, .use-phone-link {
+    color: green;
+    text-decoration: none;
+}
+
+.resend-link:hover, .use-phone-link:hover {
+    text-decoration: underline;
+}
+
+.resend-link, .use-email-link {
+    color: green;
+    text-decoration: none;
+}
+
+.resend-link:hover, .use-email-link:hover {
+    text-decoration: underline;
+}
+
+/*Identity_verification.php*/
+.verification-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+.verification-header {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.semi-bold {
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.id-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.id-options label {
+    flex: 1 1 30%;
+    color: green;
+    display: flex;
+    align-items: center;
+}
+
+.upload-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    display: block;
+    cursor: pointer;
+    color: green;
+}
+
+.upload-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-text {
+    font-size: 16px;
+    color: green;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #72C268;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
